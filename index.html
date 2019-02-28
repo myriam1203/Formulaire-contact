@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=K2D:100,200,300,400,400i,500,600,700,700i,800|Niramit:200,300,400,500,600,700" rel="stylesheet">
+  <title>Formulaire de satisfaction</title>
+</head>
+
+<header>
+
+  <h1> Formulaire de contact et de satisfaction </h1>
+    <p class="descriptif"> Posez votre question/retour et ensuite pour vous satisfaire davantage, nous vous proposons un formulaire afin de vous proposer des voyages selon vos envies ! </p>
+
+</header>
+
+<body>
+
+  <form class="container" action="#" method="post">
+
+    <p>
+      <fieldset class="section">
+        <legend> Contact </legend>
+      <label for="firstName" class="contact">Prénom <sup>*</sup> :</label>
+      <input type="text" name="firstName" id="firstName" placeholder="ex : Myriam" required>
+    </p>
+    <br>
+
+    <label for="lastName">Nom <sup>*</sup>:</label>
+    <input type="text" name="lastName" id="lastName" placeholder="ex : Achache" required>
+  </p>
+<br>
+    <p>
+
+      <label for="Email">Email <sup>*</sup> :</label>
+      <input type="email" name="email" id="email" placeholder="ex : myriam@gmail.com" required>
+    </p>
+<br>
+
+    <p>
+      <label for="birth">Date de naissance <sup>*</sup>:</label>
+      <input type="date">
+    </p>
+
+<br>
+
+<label for="message">Votre message<sup>*</sup>:</label> <br>
+  <textarea name="Message" rows="8" cols="50"></textarea>
+<br>
+<br>
+</fieldset>
+<br>
+<br>
+<fieldset>
+  <legend> Sondage </legend>
+    <p>
+      Quel pays voudriez-vous visiter en priorité ?
+      <br>
+<br>
+
+
+      <input type="checkbox" name="etatsunis" id="etatsunis">
+      <label for="etatsunis">Les Etats-Unis</label>
+       <br>
+
+      <input type="checkbox" name="japon" id="japon">
+      <label for="japon">Le Japon</label>
+      <br>
+
+      <input type="checkbox" name="australie" id="australie">
+      <label for="australie">L'Australie</label> <br>
+
+      <input type="checkbox" name="bresil" id="bresil">
+      <label for="bresil">Le Brésil</label> <br>
+
+      <input type="checkbox" name="mexique" id="mexique">
+      <label for="mexique">le Mexique</label>
+</p>
+<br>
+<br>
+
+      <p>
+        Avez vous déjà visité un de ces pays?
+        <br>
+        <br>
+        <input type="radio" name="satisfaction" value="yes" id="yes">
+        <label for="yes">Oui</label> <br>
+
+
+        <input type="radio" name="satisfaction" value="no" id="meh">
+        <label for="no">Non</label>
+      </p>
+        <br>
+        <br>
+
+        <p>
+          Quel type de voyage préférez-vous ?
+
+          <select class="option" name="userChoice" id="preference" required>
+            <option value="Sélectionner une option" disabled selected> Selectionnez une option </option>
+              <option value="trek"><table>
+                Trek
+              </table>
+              <option value="farniente">Farniente</option>
+              <option value="bienetre">Bien-être</option>
+              <option value="pepper">Village Vacances</option>
+              <option value="soleil">Vacances au soleil</option>
+          </select>
+        </p>
+        </fieldset>
+<br>
+<br>
+<br>
+    <p class="button">
+      <input type="submit" class="button" name="buttonForm" value=" E N V O Y E R">
+    </p>
+
+
+  </form>
+
+</body>
+
+</html>
